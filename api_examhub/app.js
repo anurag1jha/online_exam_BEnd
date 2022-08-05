@@ -20,5 +20,5 @@ app.get('/',(req,res)=>{
 
 const userRoute = require('./routes/users');
 app.use('/users',userRoute)
-app.listen(4000);
+app.listen(process.env.APP_PORT || 4000);
 // app.listen(process.env.APP_PORT)
