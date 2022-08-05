@@ -18,8 +18,8 @@ app.get('/',(req,res)=>{
     }
 })
 
-const userRoute = require('./routes/users');
-app.use('/users',userRoute)
+// const userRoute = require('./routes/users');
+// app.use('/users',userRoute)
 app.listen(process.env.PORT || 4000
     );
 // app.listen(process.env.APP_PORT)
